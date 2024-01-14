@@ -3,7 +3,7 @@ const db = require('./db')
 const cors = require('cors')
 
 const app = express();
-const PORT = 3306;
+const PORT = 3300;
 app.use(cors());
 app.use(express.json())
 
@@ -13,6 +13,7 @@ db.query("SELECT * FROM item", (err,result)=>{
     if(err) {
     console.log(err)
     } 
+    console.log(result);
 res.send(result)
 });   });
 
