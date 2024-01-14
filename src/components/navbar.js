@@ -127,7 +127,7 @@ function Navbar() {
             ))} */}
             <Button
                 component={Link}
-                to='/marketplace'
+                to='/'
                 onClick={handleCloseNavMenu}
                 style={{ my: 2, color: 'white', display: 'block' }}
               >
