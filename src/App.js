@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
+import Cart from './pages/Cart';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App( {Component, pageProps} ) {
   return (
-    <div>
+    <Router>
       <Navbar />
-    </div>
+      <Switch>
+        <Route path="/cart" component={Cart} />
+      </Switch>
+    </Router>
   );
 }
 

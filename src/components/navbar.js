@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
 const pages = ['Marketplace', 'Cart'];
 const settings = ['Profile', 'Sign out'];
@@ -36,7 +37,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: '#489E47' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -44,7 +45,6 @@ function Navbar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -114,7 +114,7 @@ function Navbar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {/* {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -122,13 +122,29 @@ function Navbar() {
               >
                 {page}
               </Button>
-            ))}
+            ))} */}
+            <Button
+                component={Link}
+                to='/cart'
+                onClick={handleCloseNavMenu}
+                style={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Marketplace
+              </Button>
+            <Button
+                component={Link}
+                to='/cart'
+                onClick={handleCloseNavMenu}
+                style={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Cart
+              </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Lakshana" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
