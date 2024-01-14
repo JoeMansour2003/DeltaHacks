@@ -42,7 +42,6 @@ function Navbar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} style={{ width: '50px', marginRight: '10px' }} />
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -116,18 +115,9 @@ function Navbar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))} */}
             <Button
                 component={Link}
-                to='/'
+                to='/marketplace'
                 onClick={handleCloseNavMenu}
                 style={{ my: 2, color: 'white', display: 'block' }}
               >
