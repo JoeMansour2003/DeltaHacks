@@ -1,0 +1,3 @@
+CREATE TABLE user (Email varchar(255) NOT NULL, FirstName varchar(255) NOT NULL, LastName varchar(255) NOT NULL, Password varchar(255) NOT NULL, isFarmer CHAR(1) NOT NULL DEFAULT 'N', PRIMARY KEY(Email));
+CREATE TABLE item (iId int NOT NULL AUTO_INCREMENT, Name varchar(255) NOT NULL, Description text(2000) NOT NULL, Price int NOT NULL, Image_path varchar(255), PRIMARY KEY (iId));
+CREATE TABLE cart (Email varchar(255), iId int, Quantity int, PRIMARY KEY (Email, iId), FOREIGN KEY (Email) REFERENCES user(Email), FOREIGN KEY (iId) REFERENCES item(iId));

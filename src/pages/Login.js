@@ -9,7 +9,6 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Implement your login logic here
     console.log('Logging in with:', { username, password });
     navigate('/marketplace');
   };
