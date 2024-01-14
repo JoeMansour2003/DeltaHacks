@@ -159,11 +159,11 @@ const Marketplace = () => {
                                     // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    {/* <img
-                                        src={require("../components/images/House (1).png")}
+                                    <img
+                                        src={require("../components/img/apple.png")}
                                         className="card-img-top"
-                                        alt="Image of a Marketplace for rent"
-                                    /> */}
+                                        alt="Image of an apple"
+                                    />
                                     <div className="card-body">
                                         <h5 className="card-title">Apples</h5>
                                         <p className="card-text">$2</p>
@@ -182,11 +182,11 @@ const Marketplace = () => {
                                     // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    {/* <img
-                                        src={require("../components/images/House (2).png")}
+                                    <img
+                                        src={require("../components/img/banana.png")}
                                         className="card-img-top"
-                                        alt="Image of a Marketplace for rent"
-                                    /> */}
+                                        alt="Image of banana"
+                                    />
                                     <div className="card-body">
                                         <h5 className="card-title">Banana</h5>
                                         <p className="card-text">$3841</p>
@@ -205,11 +205,11 @@ const Marketplace = () => {
                                     // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    {/* <img
-                                        src={require("../components/images/House (3).png")}
+                                    <img
+                                        src={require("../components/img/tomato.png")}
                                         className="card-img-top"
-                                        alt="Image of a Marketplace for rent"
-                                    /> */}
+                                        alt="Image of a tomato"
+                                    />
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             Juicy ass Tomato
@@ -230,15 +230,13 @@ const Marketplace = () => {
                                     // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    {/* <img
-                                        src={require("../components/images/House (4).png")}
+                                    <img
+                                        src={require("../components/img/cilantro.png")}
                                         className="card-img-top"
                                         alt="Image of a Marketplace for rent"
-                                    /> */}
+                                    />
                                     <div className="card-body">
-                                        <h5 className="card-title">
-                                            Coriander
-                                        </h5>
+                                        <h5 className="card-title">Cilantro</h5>
                                         <p className="card-text">$5</p>
                                         <p className="card-text">
                                             <small className="text-body-secondary">
@@ -261,17 +259,159 @@ const Marketplace = () => {
                                     // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    {/* <img
-                                        src={require("../components/images/House (5).png")}
+                                    <img
+                                        src={require("../components/img/cabbage.png")}
                                         className="card-img-top"
                                         alt="Image of a Marketplace for rent"
-                                    /> */}
+                                    />
                                     <div className="card-body">
                                         <h5 className="card-title">Cabbage</h5>
                                         <p className="card-text">$8</p>
                                         <p className="card-text">
                                             <small className="text-body-secondary">
                                                 The best in the world
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {hideCards.jackfruits && (
+                            <div className="col">
+                                <div
+                                    // onClick={switch_to_Forsale}
+                                    className="card h-100"
+                                >
+                                    <img
+                                        src={require("../components/img/cabbage.png")}
+                                        className="card-img-top"
+                                        alt="Image of a Marketplace for rent"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Cabbage</h5>
+                                        <p className="card-text">$8</p>
+                                        <p className="card-text">
+                                            <small className="text-body-secondary">
+                                                The best in the world
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {hideCards.montreal && (
+                            <div className="col">
+                                <div
+                                    // onClick={switch_to_Forsale}
+                                    className="card h-100"
+                                >
+                                    <img
+                                        src={require("../components/img/onion.png")}
+                                        className="card-img-top"
+                                        alt="Image of a Marketplace for rent"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Onion</h5>
+                                        <p className="card-text">$6</p>
+                                        <p className="card-text">
+                                            <small className="text-body-secondary">
+                                                Shrek's favourite snasck
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {hideCards.montreal && (
+                            <div className="col">
+                                <div
+                                    // onClick={switch_to_Forsale}
+                                    className="card h-100"
+                                >
+                                    <img
+                                        src={require("../components/img/jackfruit.webp")}
+                                        className="card-img-top"
+                                        alt="Image of a Marketplace for rent"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">
+                                            jackfruits
+                                        </h5>
+                                        <p className="card-text">$10</p>
+                                        <p className="card-text">
+                                            <small className="text-body-secondary">
+                                                Jack's favourite fruit
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {hideCards.montreal && (
+                            <div className="col">
+                                <div
+                                    // onClick={switch_to_Forsale}
+                                    className="card h-100"
+                                >
+                                    <img
+                                        src={require("../components/img/pineapple.png")}
+                                        className="card-img-top"
+                                        alt="Image of a Marketplace for rent"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">
+                                            pineapple
+                                        </h5>
+                                        <p className="card-text">$7</p>
+                                        <p className="card-text">
+                                            <small className="text-body-secondary">
+                                                Does it go on Pizza?!?!?
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {hideCards.montreal && (
+                            <div className="col">
+                                <div
+                                    // onClick={switch_to_Forsale}
+                                    className="card h-100"
+                                >
+                                    <img
+                                        src={require("../components/img/potato.png")}
+                                        className="card-img-top"
+                                        alt="Image of a Marketplace for rent"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Potato</h5>
+                                        <p className="card-text">$10</p>
+                                        <p className="card-text">
+                                            <small className="text-body-secondary">
+                                                I'm as smart as a potato
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {hideCards.montreal && (
+                            <div className="col">
+                                <div
+                                    // onClick={switch_to_Forsale}
+                                    className="card h-100"
+                                >
+                                    <img
+                                        src={require("../components/img/broccoli.png")}
+                                        className="card-img-top"
+                                        alt="Image of a Marketplace for rent"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Broccoli</h5>
+                                        <p className="card-text">$-1</p>
+                                        <p className="card-text">
+                                            <small className="text-body-secondary">
+                                                nobody's favourite vegetable
                                             </small>
                                         </p>
                                     </div>
