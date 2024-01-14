@@ -125,7 +125,7 @@ function Navbar() {
             ))} */}
             <Button
                 component={Link}
-                to='/cart'
+                to='/marketplace'
                 onClick={handleCloseNavMenu}
                 style={{ my: 2, color: 'white', display: 'block' }}
               >

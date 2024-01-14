@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Cart from './pages/Cart';
+import Property from './pages/Marketplace';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App( {Component, pageProps} ) {
@@ -9,6 +10,7 @@ function App( {Component, pageProps} ) {
     <Router>
       <Navbar />
       <Switch>
+        <Route path="/marketplace" component={Property} />
         <Route path="/cart" component={Cart} />
       </Switch>
     </Router>
