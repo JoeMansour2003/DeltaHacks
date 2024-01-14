@@ -62,7 +62,7 @@ const Marketplace = () => {
             <div className="row">
                 {/* cards */}
                 <div className="col">
-                    <div className="row row-cols-1 row-cols-md-4 g-3">
+                    <div className="row row-cols-1 row-cols-md-6 g-3">
                         {hideCards.ottawa && (
                             <div className="col">
                                 <div
@@ -81,6 +81,21 @@ const Marketplace = () => {
                                             <small className="text-body-secondary">
                                                 McIntosh
                                             </small>
+                                            <div className="row d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <div>
+                                                    <input
+                                                        type="number"
+                                                        min="0"
+                                                        className="form-control text-center"
+                                                    />
+                                                </div>
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-success"
+                                                >
+                                                    Add/Update cart
+                                                </button>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -105,6 +120,21 @@ const Marketplace = () => {
                                                 Cavendish Banana
                                             </small>
                                         </p>
+                                        <div className="row d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -130,6 +160,21 @@ const Marketplace = () => {
                                                 Campari tomato
                                             </small>
                                         </p>
+                                        <div className="row d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -148,17 +193,22 @@ const Marketplace = () => {
                                     <div className="card-body">
                                         <h5 className="card-title">Cilantro</h5>
                                         <p className="card-text">$5</p>
-                                        <p className="card-text">
-                                            <small className="text-body-secondary">
-                                                Coriander, also known as
-                                                cilantro, is an annual herb in
-                                                the family Apiaceae. All parts
-                                                of the plant are edible, but the
-                                                fresh leaves and the dried seeds
-                                                are the parts most traditionally
-                                                used in cooking.
-                                            </small>
-                                        </p>
+                                        <p className="card-text"></p>
+                                        <div className="row d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -182,6 +232,21 @@ const Marketplace = () => {
                                                 The best in the world
                                             </small>
                                         </p>
+                                        <div className="row -center">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -205,6 +270,21 @@ const Marketplace = () => {
                                                 The best in the world
                                             </small>
                                         </p>
+                                        <div className="row -center">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +298,7 @@ const Marketplace = () => {
                                     <img
                                         src={require("../components/img/onion.png")}
                                         className="card-img-top"
-                                        alt="Image of a Marketplace for rent"
+                                        alt="Image of an onion"
                                     />
                                     <div className="card-body">
                                         <h5 className="card-title">Onion</h5>
@@ -228,6 +308,21 @@ const Marketplace = () => {
                                                 Shrek's favourite snasck
                                             </small>
                                         </p>
+                                        <div className="row -center">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -253,6 +348,21 @@ const Marketplace = () => {
                                                 Jack's favourite fruit
                                             </small>
                                         </p>
+                                        <div className="row -center">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -278,6 +388,21 @@ const Marketplace = () => {
                                                 Does it go on Pizza?!?!?
                                             </small>
                                         </p>
+                                        <div className="row -center">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -301,6 +426,21 @@ const Marketplace = () => {
                                                 I'm as smart as a potato
                                             </small>
                                         </p>
+                                        <div className="row -center">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -324,6 +464,21 @@ const Marketplace = () => {
                                                 nobody's favourite vegetable
                                             </small>
                                         </p>
+                                        <div className="row -center">
+                                            <div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    className="form-control text-center"
+                                                />
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                            >
+                                                Add/Update cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
