@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 
 const Property = () => {
-    const history = useHistory();
     const [hideCards, setHideCards] = useState({
         toronto: true,
         ottawa: true,
@@ -22,9 +20,9 @@ const Property = () => {
         document.getElementById("get").value = put;
     };
 
-    const switch_to_Forsale = () => {
-        history.push("/ForSale");
-    };
+    // const switch_to_Forsale = () => {
+    //     history.push("/ForSale");
+    // };
 
     const handleCheckboxChange = (checkboxId) => {
         setHideCards((prevState) => {
@@ -460,14 +458,14 @@ const Property = () => {
                         {hideCards.ottawa && (
                             <div className="col">
                                 <div
-                                    onClick={switch_to_Forsale}
+                                    // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    <img
+                                    {/* <img
                                         src={require("../components/images/House (1).png")}
                                         className="card-img-top"
                                         alt="Image of a property for rent"
-                                    />
+                                    /> */}
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             5883 Rue Hutchison, Ottawa
@@ -485,14 +483,14 @@ const Property = () => {
                         {hideCards.toronto && (
                             <div className="col">
                                 <div
-                                    onClick={switch_to_Forsale}
+                                    // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    <img
+                                    {/* <img
                                         src={require("../components/images/House (2).png")}
                                         className="card-img-top"
                                         alt="Image of a property for rent"
-                                    />
+                                    /> */}
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             120 Playfair Ave, Toronto
@@ -510,14 +508,14 @@ const Property = () => {
                         {hideCards.gatineau && (
                             <div className="col">
                                 <div
-                                    onClick={switch_to_Forsale}
+                                    // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    <img
+                                    {/* <img
                                         src={require("../components/images/House (3).png")}
                                         className="card-img-top"
                                         alt="Image of a property for rent"
-                                    />
+                                    /> */}
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             341 Spartan Ave, Gatineau
@@ -535,14 +533,14 @@ const Property = () => {
                         {hideCards.kingston && (
                             <div className="col">
                                 <div
-                                    onClick={switch_to_Forsale}
+                                    // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    <img
+                                    {/* <img
                                         src={require("../components/images/House (4).png")}
                                         className="card-img-top"
                                         alt="Image of a property for rent"
-                                    />
+                                    /> */}
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             332 Emerald St, Kingston
@@ -560,14 +558,14 @@ const Property = () => {
                         {hideCards.montreal && (
                             <div className="col">
                                 <div
-                                    onClick={switch_to_Forsale}
+                                    // onClick={switch_to_Forsale}
                                     className="card h-100"
                                 >
-                                    <img
+                                    {/* <img
                                         src={require("../components/images/House (5).png")}
                                         className="card-img-top"
                                         alt="Image of a property for rent"
-                                    />
+                                    /> */}
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             142 Saint David, Montreal
