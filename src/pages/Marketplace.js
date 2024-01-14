@@ -1,64 +1,154 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import {
+  TextField,
+  Button,
+  Grid,
+  Checkbox,
+  FormControlLabel,
+  Slider,
+} from "@mui/material";
 
 const Marketplace = () => {
-    const [hideCards, setHideCards] = useState({
-        toronto: true,
-        ottawa: true,
-        gatineau: true,
-        kingston: true,
-        montreal: true,
-        flag: false,
+  const [hideCards, setHideCards] = useState({
+    toronto: true,
+    ottawa: true,
+    gatineau: true,
+    kingston: true,
+    montreal: true,
+    flag: false,
+  });
+
+  const [query, setQuery] = useState('');
+  const [showVegetables, setShowVegetables] = useState(true);
+  const [showFruits, setShowFruits] = useState(true);
+  const [sliderValue, setSliderValue] = useState(50);
+
+  const handleCheckboxChange = (checkboxId) => {
+    setHideCards((prevState) => {
+      if (!prevState.flag) {
+        prevState.toronto = false;
+        prevState.ottawa = false;
+        prevState.gatineau = false;
+        prevState.kingston = false;
+        prevState.montreal = false;
+        prevState.flag = true;
+      }
+
+      const allUnchecked = Object.values(prevState).every(
+        (value) => value === false
+      );
+      if (allUnchecked) {
+        // Make all cards visible by resetting the state
+        showAll();
+      }
+
+      return {
+        ...prevState,
+        [checkboxId]: !prevState[checkboxId],
+      };
     });
+  };
 
-    const fetch = () => {
-        var get = document.getElementById("get").value;
-        document.getElementById("put").value = get;
-    };
+  const showAll = () => {
+    setHideCards({
+      toronto: true,
+      ottawa: true,
+      gatineau: true,
+      kingston: true,
+      montreal: true,
+    });
+  };
 
-    const fetch2 = () => {
-        var put = document.getElementById("put").value;
-        document.getElementById("get").value = put;
-    };
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      // handleSearchAction();
+      console.log();
+    }
+  };
 
-    const handleCheckboxChange = (checkboxId) => {
-        setHideCards((prevState) => {
-            if (!prevState.flag) {
-                prevState.toronto = false;
-                prevState.ottawa = false;
-                prevState.gatineau = false;
-                prevState.kingston = false;
-                prevState.montreal = false;
-                prevState.flag = true;
-            }
+  const handleClick = () => {
+    // handleSearchAction();
+    console.log();
+  };
 
-            const allUnchecked = Object.values(prevState).every(
-                (value) => value === false
-            );
-            if (allUnchecked) {
-                // Make all cards visible by resetting the state
-                showAll();
-            }
+  const handleVegetableCheckboxChange = () => {
+    setShowVegetables(!showVegetables);
+  };
 
-            return {
-                ...prevState,
-                [checkboxId]: !prevState[checkboxId],
-            };
-        });
-    };
-    const showAll = () => {
-        setHideCards({
-            toronto: true,
-            ottawa: true,
-            gatineau: true,
-            kingston: true,
-            montreal: true,
-        });
-    };
+  const handleFruitCheckboxChange = () => {
+    setShowFruits(!showFruits);
+  };
 
-    return (
-        <div className="container">
-            <br />
-            <br />
+  const handleSliderChange = (event, newValue) => {
+    setSliderValue(newValue);
+  };
+
+  return (
+    <div className="container">
+      <br />
+      <br />
+      <div className="searchbar" style={{ marginBottom: "10px" }}>
+        <Grid container spacing={1} alignItems="center">
+          <Grid item>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={showVegetables}
+                  onChange={handleVegetableCheckboxChange}
+                  style={{ color: "#489E47" }}
+                />
+              }
+              label="Vegetable"
+              labelPlacement="start"
+            />
+          </Grid>
+          <Grid item>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={showFruits}
+                  onChange={handleFruitCheckboxChange}
+                  color="primary"
+                  style={{ marginRight: "100px", color: "#489E47" }}
+
+                />
+              }
+              label="Fruit"
+              labelPlacement="start"
+            />
+          </Grid>
+          <Grid item xs={3}>
+            <Slider
+              value={sliderValue}
+              onChange={handleSliderChange}
+              aria-labelledby="continuous-slider"
+              style={{ color: "#489E47" }}
+            />
+          </Grid>
+          <Grid item>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleClick}
+              style={{ marginLeft: "300px", marginRight: "0px", backgroundColor: "#489E47", color: "#ffffff" }}
+            >
+              Search
+            </Button>
+          </Grid>
+          <Grid item>
+            <TextField
+              label="Search"
+              variant="outlined"
+              fullWidth
+              size="small"
+              style={{ width: "218px", color: "#489E47" }}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
+            />
+          </Grid>
+        </Grid>
+      </div>
             <div className="row">
                 {/* cards */}
                 <div className="col">
