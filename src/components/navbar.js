@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import logo from './logo.png';
 
 const pages = ['Marketplace', 'Cart'];
 const settings = ['Profile', 'Sign out'];
@@ -40,7 +41,8 @@ function Navbar() {
     <AppBar position="static" sx={{ backgroundColor: '#489E47' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <img src={logo} style={{ width: '50px', marginRight: '10px' }} />
+          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
